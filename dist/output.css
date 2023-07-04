@@ -809,10 +809,18 @@ video {
   .md\:p-8 {
     padding: 2rem;
   }
+
+  .md\:p-5 {
+    padding: 1.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
   }
 }
