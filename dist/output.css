@@ -558,6 +558,30 @@ video {
   margin-top: 1rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -582,6 +606,14 @@ video {
   height: 6rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -590,12 +622,20 @@ video {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.place-content-center {
+  place-content: center;
 }
 
 .place-items-center {
@@ -632,9 +672,17 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-l-xl {
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .bg-blue-200 {
@@ -707,21 +755,6 @@ video {
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
 }
 
-.bg-blue-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-
 .p-10 {
   padding: 2.5rem;
 }
@@ -730,8 +763,16 @@ video {
   padding: 0.75rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-8 {
   padding: 2rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .px-3 {
@@ -744,12 +785,20 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .align-middle {
@@ -791,6 +840,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -813,6 +866,10 @@ video {
 
   .md\:p-8 {
     padding: 2rem;
+  }
+
+  .md\:p-10 {
+    padding: 2.5rem;
   }
 }
 

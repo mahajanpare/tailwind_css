@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../dist/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 </head>
 
 <body class="bg-gray-200">
@@ -220,17 +221,66 @@
     </div>
   </section>
 
-  <section id="portfolio" class="p-10">
+  <section id="portfolio" class="md:p-10 p-3">
     <div class="mb-10">
-      <h1 class="text-4xl fond-bold">bloog</h1>
+      <h1 class="text-4xl fond-bold">portfolio</h1>
     </div>
 
-    <div class="grid grid-cols-2">
-      <h1>html</h1>
-      <p>paresh mahajan xyz hjfjjekwkfejfe;ff</p>
+    <div class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-content-center">
+              <div class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-1">
+                <h1 class="text-3xl">free lancing website</h1>
+                <p class="mt-4 text-sm ">i larn html css bootstrap tailwind css i larn html css bootstrap tailwind css
+                </p>
+
+                <ul class="mt-8 text-sm flex flex-col ml-10">
+                  <li><i class="fa-solid fa-chevron-right"></i> html 5</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> css 3</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> git / github</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> ui / ux</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> web designer</li>
+                  <li class="mt-5"><button class="p-2 bg-green-900 rounded text-white w-full">visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+              </div>
+
+              <div class="p-3">
+                <img src="images/shop-1.png" class="w-3/4 border-2 rounded-xl">
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="grid md:grid-cols-2 grid-cols-1 bg-white place-content-center">
+              <div class="flex flex-col justify-center align-middle p-3 md:ml-20 ml-1">
+                <h1 class="text-3xl">main home</h1>
+                <p class="mt-4 text-sm ">i larn html css bootstrap tailwind css i larn html css bootstrap tailwind css
+                </p>
+
+                <ul class="mt-8 text-sm flex flex-col ml-10">
+                  <li><i class="fa-solid fa-chevron-right"></i> html 5</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> css 3</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> git / github</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> ui / ux</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> web designer</li>
+                  <li class="mt-5"><button class="p-2 bg-green-900 rounded text-white w-full">visit <i
+                        class="fas fa-paper-plane"></i></button></li>
+                </ul>
+              </div>
+
+              <div class="p-3">
+                <img src="images/shop-2.png" class="w-3/4 border-2 rounded-xl">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
   </section>
+
 
   <script src="https://kit.fontawesome.com/dec63fa7a0.js" crossorigin="anonymous"></script>
   <script>
@@ -243,6 +293,14 @@
       }
     }
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide').mount();
+      new WOW().init();
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </body>
 
 </html>
